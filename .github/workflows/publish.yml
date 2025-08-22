@@ -16,7 +16,7 @@ on:
   workflow_dispatch:
 
 env:
-  RELEASE_NODE_VERSION: 20 # https://nodejs.dev/en/about/releases
+  RELEASE_NODE_VERSION: '20.x' # https://nodejs.dev/en/about/releases
 
 jobs:
   build-and-publish:
