@@ -11,7 +11,9 @@ name: Publish NPM Package
 # Or refer to https://github.com/amazon-connect/amazon-connect-chatjs/blob/master/.github/docs/NpmPublishDocumentation.md
 
 on:
-  workflow_dispatch:
+  push:
+    branches: ['*']
+#   workflow_dispatch:
 
 env:
   RELEASE_NODE_VERSION: '20.x' # https://nodejs.dev/en/about/releases
