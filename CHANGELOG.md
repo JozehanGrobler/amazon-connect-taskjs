@@ -1,5 +1,10 @@
 # CHANGELOG.md
 
+## [2.0.1]
+### Added
+- Initial TypeScript migration: auto-generate  `*.d.ts` files in dist folder.
+- Delete and gitignore `dist` folder
+
 ## 2.0.0
 Added functions:
 * `agent.updateContact` method to update a task contact created from a template.

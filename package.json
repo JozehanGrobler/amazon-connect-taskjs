@@ -1,26 +1,33 @@
 {
-  "name": "amazon-connect-taskjs",
-  "version": "2.0.0",
+  "name": "@jozehan/amazon-connect-taskjs",
+  "version": "2.0.1-alpha.1",
   "author": "Amazon Web Services",
   "license": "Apache-2.0",
   "description": "Provides task support to AmazonConnect customers",
   "main": "dist/amazon-connect-task.js",
+  "types": "dist/index.d.ts",
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=16.0.0"
   },
   "directories": {
     "lib": "./dist"
   },
+  "files": [
+    "dist",
+    "src/**/*.ts",
+    "src/**/*.js",
+    "src/**/*.jsx"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amazon-connect/amazon-connect-taskjs.git"
   },
   "scripts": {
     "test": "jest",
-    "release": "jest && webpack --mode=production",
-    "devo": "jest && webpack --mode=development",
-    "watch": "webpack --watch",
-    "dev": "webpack --mode=development && webpack --watch",
+    "release": "export NODE_OPTIONS=--openssl-legacy-provider && tsc && jest && webpack --mode=production",
+    "devo": "export NODE_OPTIONS=--openssl-legacy-provider && jest && webpack --mode=development",
+    "watch": "export NODE_OPTIONS=--openssl-legacy-provider && webpack --watch",
+    "dev": "export NODE_OPTIONS=--openssl-legacy-provider && webpack --mode=development && webpack --watch",
     "clean": "rm -rf build/ node_modules build",
     "release-watch": "npm run release && npm run watch"
   },
@@ -50,10 +57,13 @@
     "eslint-webpack-plugin": "^2.1.0",
     "jest": "^26.4.2",
     "ssri": ">=8.0.1",
-    "webpack": "^5.73.0",
-    "webpack-cli": "^3.3.12"
+    "webpack": "^5.101.3",
+    "webpack-cli": "^6.0.1"
   },
   "npm-pretty-much": {
     "runRelease": "always"
+  },
+  "dependencies": {
+    "typescript": "^5.9.2"
   }
 }
