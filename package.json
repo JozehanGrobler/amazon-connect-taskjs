@@ -24,7 +24,7 @@
   },
   "scripts": {
     "test": "jest",
-    "release": "export NODE_OPTIONS=--openssl-legacy-provider && jest && webpack --mode=production",
+    "release": "export NODE_OPTIONS=--openssl-legacy-provider && tsc && jest && webpack --mode=production",
     "devo": "export NODE_OPTIONS=--openssl-legacy-provider && jest && webpack --mode=development",
     "watch": "export NODE_OPTIONS=--openssl-legacy-provider && webpack --watch",
     "dev": "export NODE_OPTIONS=--openssl-legacy-provider && webpack --mode=development && webpack --watch",
