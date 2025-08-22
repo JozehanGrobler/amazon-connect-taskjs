@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: release
-      url: https://www.npmjs.com/package/amazon-connect-chatjs
+    #   url: https://www.npmjs.com/package/amazon-connect-chatjs
 
     steps:
       - uses: actions/checkout@v4
