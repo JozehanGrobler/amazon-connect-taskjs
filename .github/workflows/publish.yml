@@ -12,7 +12,7 @@ name: Publish NPM Package
 
 on:
   push:
-    branches: ['*']
+    branches: ['**']
 #   workflow_dispatch:
 
 env:
