@@ -13,7 +13,7 @@ name: Publish NPM Package
 on:
   push:
     branches: ['**']
-#   workflow_dispatch:
+  workflow_dispatch:
 
 env:
   RELEASE_NODE_VERSION: '20.x' # https://nodejs.dev/en/about/releases
