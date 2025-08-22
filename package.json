@@ -1,6 +1,6 @@
 {
   "name": "@jozehan/amazon-connect-taskjs",
-  "version": "2.0.1",
+  "version": "2.0.1.1",
   "author": "Amazon Web Services",
   "license": "Apache-2.0",
   "description": "Provides task support to AmazonConnect customers",
